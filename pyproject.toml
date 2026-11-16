@@ -84,6 +84,33 @@ ignore_missing_imports = true
 [tool.pixi.workspace]
 channels = ["conda-forge"]
 platforms = ["linux-64"]
+preview = ["pixi-build"]
+
+[tool.pixi.package]
+name = "fluvial"
+version = "0.1.0"
+
+[tool.pixi.package.build]
+backend = { name = "pixi-build-python", version = "0.*" }
+config.ignore-pypi-mapping = false
+
+[tool.pixi.package.run-dependencies]
+click = "*"
+gufe = "*"
+networkx = "*"
+openfe = "*"
+mdanalysis = "*"
+rdkit = "*"
+posebusters = "*"
+pdbfixer = "*"
+prefect-ray = "*"
+biotite = "*"
+hydride = "*"
+
+[tool.pixi.package.host-dependencies]
+python = "3.12.*"
+setuptools = "*"
+setuptools-scm = "*"
 
 [tool.pixi.dependencies]
 click = "*"

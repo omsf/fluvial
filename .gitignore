@@ -13,3 +13,7 @@ pixi.lock
 
 # documentation artifacts
 docs/_build/*
+
+# outputs of pixi publish
+/build/
+*.conda
