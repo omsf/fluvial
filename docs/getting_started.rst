@@ -97,3 +97,15 @@ The **simulator** runs every transformation in the network.
 
 The **analyzer** takes the simulation outputs and estimates the binding free
 energies and reports network level diagnostics.
+
+Running the pipeline
+--------------------
+
+With the configuration above saved as ``config.toml``, the whole pipeline is run with
+
+.. code:: bash
+
+   flv run -c config.toml --end analyzer -o results.json
+
+Stages can also be run in isolation with ``--begin``/``--end``, feeding the
+previous stage's output back in with ``-i``.
