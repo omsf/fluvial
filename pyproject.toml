@@ -95,17 +95,19 @@ backend = { name = "pixi-build-python", version = "0.*" }
 config.ignore-pypi-mapping = false
 
 [tool.pixi.package.run-dependencies]
-click = "*"
-gufe = "*"
-networkx = "*"
-openfe = "*"
-mdanalysis = "*"
-rdkit = "*"
-posebusters = "*"
-pdbfixer = "*"
-prefect-ray = "*"
 biotite = "*"
+cinnabar = ">=0.6"
+click = "*"
+dimorphite-dl = "==2.0.2"
+gufe = "*"
 hydride = "*"
+mdanalysis = "*"
+networkx = "*"
+openfe = ">=1.0"
+pdbfixer = "*"
+posebusters = "*"
+prolif = ">=2.1"
+rdkit = "*"
 
 [tool.pixi.package.host-dependencies]
 python = "3.12.*"
